@@ -1,6 +1,6 @@
 [package]
 name = "runall"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Run multiple commands concurrently."
 authors = ["Robert Krahn <robert.krahn@gmail.com>"]
