@@ -3,8 +3,10 @@ name = "runall"
 version = "0.1.0"
 edition = "2021"
 description = "Run multiple commands concurrently."
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Robert Krahn <robert.krahn@gmail.com>"]
+license = "MIT"
+keywords = ["concurrently", "cli"]
+repository = "https://github.com/rksm/runall"
 
 [dependencies]
 anyhow = "1.0.71"
