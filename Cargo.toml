@@ -1,0 +1,17 @@
+[package]
+name = "runall"
+version = "0.1.0"
+edition = "2021"
+description = "Run multiple commands concurrently."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+clap = { version = "4.3.0", features = ["derive", "env"] }
+ctrlc = "3.2.5"
+env_logger = "0.10.0"
+flume = "0.10.14"
+log = "0.4.17"
+serde = { version = "1.0.163", features = ["derive"] }
+serde_json = "1.0.96"
