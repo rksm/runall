@@ -1,3 +1,23 @@
+//! # runall
+//!
+//! Install: `cargo install runall`
+//!
+//! ## Usage
+//!
+//!```shell
+//! $ runall --help
+//! Run multiple commands in parallel.
+//!
+//! Usage: runall [OPTIONS] [COMMANDS]...
+//!
+//! Arguments:
+//!   [COMMANDS]...
+//!
+//! Options:
+//!   -n, --names <NAMES>
+//!   -h, --help           Print help
+//!```
+
 use clap::Parser;
 use std::{
     io::{BufRead, BufReader, Read},
@@ -5,6 +25,7 @@ use std::{
 };
 
 #[derive(Parser)]
+#[clap(about = "Run multiple commands in parallel.")]
 pub struct Args {
     #[clap(short, long)]
     pub names: Option<Vec<String>>,
